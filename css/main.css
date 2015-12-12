@@ -1,6 +1,23 @@
 /*STYLESHEET FOR PINPOINT*/
 
-#footerul {
+.card-panel {
+	background-color: #007aff;
+}
+
+.description {
+	font-size: 14pt;
+}
+
+.divider {
+	background-color: #fff;
+	border-top: 2px dotted #8c8b8b;
+}
+
+/* Style for footer
+	- align text
+	- change color of links
+	- display links inline*/
+#footerul, .subtitle {
 	text-align: center;
 }
 #footerul a {
@@ -11,8 +28,10 @@
 	padding: 10px;
 }
 
-#intro {
-	height: 100vh;
+/* changes height of first head section */
+#head {
+	height: 70px;
+	margin-bottom: 35px;
 }
 
 /*changes the default navbar link color*/
@@ -21,7 +40,7 @@
 }
 
 /*sets width and margin of logo in navbar*/
-#logoImg {
+.logoImg {
 	width: 35px;
 	margin-left: 40px;
 }
@@ -29,7 +48,7 @@
 /* Positions mainlogo img */
 #mainLogo {
 	position: absolute;
-	left: 36%;
+	left: 35%;
 	top: 43%;
 	transform: translate(-36%, -50%);
 	height: 12em;
@@ -42,6 +61,18 @@
 		height: 10em;
 		left: 10%;
 	}
+
+	.subtitle {
+		margin-top: 60%;
+	}
+}
+
+.subtitle {
+	margin-top: 40%;
+}
+
+.title-text {
+	margin-left: 30px;
 }
 
 
