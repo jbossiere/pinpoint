@@ -15,9 +15,10 @@
 	  	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-	  	<!-- Materialize CSS and JavaScript -->
+	  	<!-- Materialize CSS and JavaScript and icons -->
 	  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
 	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+	  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	  	<!-- Animate.css -->
 	  	<link rel="stylesheet" href="css/animate.css">
@@ -28,30 +29,59 @@
   	</head>
 
   	<body>
+  		<!-- Navbar -->
 		<div class="navbar-fixed">
 			<nav>
 				<div class="nav-wrapper white">
-					<a ui-sref="home" class="brand-logo"><img id="logoImg" src="img/pin.png"></a>
+					<a href="#top" class="brand-logo"><img class="logoImg" src="img/pin.png"></a>
+					<a data-activates="mobile-demo" class="link button-collapse"><i class="material-icons">menu</i></a>
  					<ul class="right hide-on-med-and-down">
-						<li><a class="link" ui-sref="home">Home</a></li>
-						<li><a class="link" ui-sref="about">About</a></li>
-						<li><a class="link" ui-sref="contact">Contact</a></li>
+						<li><a class="link" href="#top">Top</a></li>
+						<li><a class="link" href="#intro">Intro</a></li>
+						<li><a class="link" ui-sref="contact">Another link</a></li>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+				        <li><a class="link" href="#top">Top</a></li>
+				        <li><a class="link" href="#intro">Intro</a></li>
+				        <li><a class="link" href="">Another Link</a></li>
 					</ul>
 				</div>
 			</nav>
 		</div>
 
-		<div id="intro">
-			<img id="mainLogo" class="animated fadeInDown" src="img/main-logo.png">
+		<!-- Header section -->
+		<div id="head">
+			<img id="mainLogo" class="animated bounce" src="img/main-logo.png">
+			<div class="subtitle">
+				<h5>Julian Bossiere</h5>
+				<h5>INFO 360, Autumn 2015</h5>
+			</div>
 		</div>
 
+		<div class="card-panel"></div>
+
+		<!-- Intro Section -->
+		<div class="container" id="intro">
+			<h1 class="title-text">Introduction</h1>
+			<div class="col-xs-12 col-md-6">
+				<p class="description">This process book describes the steps my team and I took in designing a solution to the problem University of Washington students have of not being able to easily find events in when they are outside their on-campus communities, because they lack awareness of when, where, and what events are going on around them. </p>
+				<p class="description">The prompt was simply, "Surviving College" and we were asked to find a problem that fell into that category. This website outlines how our team arrived at our final design, as well as my specific contributions to the project.</p>
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<img class="circle profpic" src="img/natasha.png">
+				<img class="circle profpic" src="img/katrina.png">
+				<img class="circle profpic" src="img/julian.jpg">
+			</div>
+		</div>
+
+		<!-- Footer Section -->
 		<hr>
 		<div id="footer navigation">
 			<ul id="footerul">
-				<li><a href="https://github.com/jbossiere" target="_blank">GitHub</a></li>
-				<li><a href="other/resume201511.pdf" target="_blank">Resume</a></li>
-				<li><a href="https://www.linkedin.com/in/julianbossiere" target="_blank">LinkedIn</a></li>
-				<p class="footertext">coded and designed by julian bossiere<p>
+				<li><a href="#intro">Top</a></li>
+				<li><a href="">Some link</a></li>
+				<li><a href="">Another link</a></li>
+				<p class="footertext">website coded and designed by <a href="http://students.washington.edu/jgb93/info343/portfolio/#/home" target="_blank">Julian Bossiere</a><p>
 			</ul>
 		</div>
   	</body>
