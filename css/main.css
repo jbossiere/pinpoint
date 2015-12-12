@@ -1,8 +1,20 @@
-/*Stylesheet for Pinpoint*/
+/*STYLESHEET FOR PINPOINT*/
+
+#footerul {
+	text-align: center;
+}
+#footerul a {
+	color: #007aff;
+}
+#footerul li {
+	display: inline;
+	padding: 10px;
+}
 
 #intro {
 	height: 100vh;
 }
+
 /*changes the default navbar link color*/
 .link {
 	color: black;
@@ -14,13 +26,24 @@
 	margin-left: 40px;
 }
 
+/* Positions mainlogo img */
 #mainLogo {
 	position: absolute;
 	left: 36%;
 	top: 43%;
-	transform: translate(-50%, -50%);
+	transform: translate(-36%, -50%);
 	height: 12em;
 }
 
+/* Settings to optimize for mobile */
+@media screen and (max-width: 768px) {
+	/*adjust image size for mobile*/
+	#mainLogo {
+		height: 10em;
+		left: 10%;
+	}
+}
 
-/*pin color: #007aff*/
+
+
+/*pin color: #007aff
