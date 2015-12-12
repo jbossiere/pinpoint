@@ -1,0 +1,26 @@
+/*Stylesheet for Pinpoint*/
+
+#intro {
+	height: 100vh;
+}
+/*changes the default navbar link color*/
+.link {
+	color: black;
+}
+
+/*sets width and margin of logo in navbar*/
+#logoImg {
+	width: 35px;
+	margin-left: 40px;
+}
+
+#mainLogo {
+	position: absolute;
+	left: 36%;
+	top: 43%;
+	transform: translate(-50%, -50%);
+	height: 12em;
+}
+
+
+/*pin color: #007aff*/
