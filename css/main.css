@@ -13,11 +13,7 @@
 	border-top: 2px dotted #8c8b8b;
 }
 
-/* Style for footer
-	- align text
-	- change color of links
-	- display links inline*/
-#footerul, .subtitle {
+#footerul, .subtitle, .caption {
 	text-align: center;
 }
 #footerul a {
@@ -28,7 +24,7 @@
 	padding: 10px;
 }
 
-/* changes height of first head section */
+/* changes height of first head section 
 #head {
 	height: 70px;
 	margin-bottom: 35px;
@@ -37,12 +33,14 @@
 /*changes the default navbar link color*/
 .link {
 	color: black;
+	line-height: inherit;
 }
 
 /*sets width and margin of logo in navbar*/
 .logoImg {
-	width: 35px;
+	width: 25px;
 	margin-left: 40px;
+	vertical-align: initial;
 }
 
 /* Positions mainlogo img */
@@ -61,18 +59,26 @@
 		height: 10em;
 		left: 10%;
 	}
+}
 
-	.subtitle {
-		margin-top: 60%;
-	}
+nav, .link {
+	height: 50px;
+}
+
+.profpic {
+	height: 200px;
+	border: solid 3px #007aff;
+	border-radius: 50%;
+	margin: 30px;
 }
 
 .subtitle {
-	margin-top: 40%;
+	margin-top: 75vh;
+	margin-bottom: 40px;
 }
 
-.title-text {
-	margin-left: 30px;
+#welcome-screenshot {
+	height: 500px;
 }
 
 
