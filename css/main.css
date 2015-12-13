@@ -1,5 +1,8 @@
 /*STYLESHEET FOR PINPOINT*/
 
+.caption {
+	margin-bottom: 0;
+}
 .card-panel {
 	background-color: #007aff;
 }
@@ -24,21 +27,14 @@
 	padding: 10px;
 }
 
-/* changes height of first head section 
-#head {
-	height: 70px;
-	margin-bottom: 35px;
-}
-
 /*changes the default navbar link color*/
 .link {
 	color: black;
-	line-height: inherit;
 }
 
 /*sets width and margin of logo in navbar*/
 .logoImg {
-	width: 25px;
+	width: 30px;
 	margin-left: 40px;
 	vertical-align: initial;
 }
@@ -48,10 +44,61 @@
 	position: absolute;
 	left: 35%;
 	top: 43%;
-	transform: translate(-36%, -50%);
+	transform: translate(-50%, -50%);
 	height: 12em;
 }
 
+nav, .link {
+	height: 50px;
+	line-height: 53px;
+}
+
+/* Styles the team photos*/
+.profpic {
+	height: 200px;
+	padding-right: 10px;
+/*	border: solid 3px #007aff;
+*/	border-radius: 50%;
+}
+
+/*positions header subtitles*/
+.subtitle {
+	margin-top: 75vh;
+	margin-bottom: 70px;
+}
+
+#team {
+	margin-bottom: 20px;
+	height: 213px;
+}
+#teamDiv {
+	margin-top: 50px;
+}
+
+/* Styles all of the section titles*/
+.title-text {
+	border-bottom: solid 4px;
+	border-color: #007aff;
+}
+
+#welcome-screenshot {
+	height: 500px;
+}
+
+/* Settings to optimize for larger screens */
+@media screen and (min-width: 1281px) {
+	#mainLogo {
+		left: 38%;
+	}
+}
+@media screen and (max-width: 1215px) {
+	.profpic, #team {
+		height: 150px;
+	}
+	#teamDiv {
+		margin-top: 100px;
+	}
+}
 /* Settings to optimize for mobile */
 @media screen and (max-width: 768px) {
 	/*adjust image size for mobile*/
@@ -59,28 +106,10 @@
 		height: 10em;
 		left: 10%;
 	}
+	#teamDiv {
+		margin-top: 0px;
+	}
 }
-
-nav, .link {
-	height: 50px;
-}
-
-.profpic {
-	height: 200px;
-	border: solid 3px #007aff;
-	border-radius: 50%;
-	margin: 30px;
-}
-
-.subtitle {
-	margin-top: 75vh;
-	margin-bottom: 40px;
-}
-
-#welcome-screenshot {
-	height: 500px;
-}
-
 
 
 /*pin color: #007aff
