@@ -16,15 +16,27 @@
 	border-top: 2px dotted #8c8b8b;
 }
 
-#footerul, .subtitle, .caption {
-	text-align: center;
+#footer {
+	height: 80px;
+	margin-top: 10px;
+	background-color: #eceff1;
+}
+
+#footerul {
+	margin-bottom: 0;
 }
 #footerul a {
 	color: #007aff;
 }
 #footerul li {
 	display: inline;
-	padding: 10px;
+	padding-right: 20px;
+}
+#footerul p {
+	margin-bottom: 0;
+}
+#footerul, .subtitle, .caption {
+	text-align: center;
 }
 
 /*changes the default navbar link color*/
