@@ -1,8 +1,5 @@
 /*STYLESHEET FOR PINPOINT*/
 
-.caption {
-	margin-bottom: 0;
-}
 .card-panel {
 	background-color: #007aff;
 }
@@ -65,12 +62,15 @@ nav, .link {
 	line-height: 53px;
 }
 
+.notesImg {
+	width: 100%;
+}
+
 /* Styles the team photos*/
 .profpic {
-	height: 200px;
+	max-width: 100%;
 	padding-right: 10px;
-/*	border: solid 3px #007aff;
-*/	border-radius: 50%;
+	border-radius: 50%;
 }
 
 /*positions header subtitles*/
@@ -81,7 +81,7 @@ nav, .link {
 
 #team {
 	margin-bottom: 20px;
-	height: 213px;
+	max-width: 100%;
 }
 #teamDiv {
 	margin-top: 50px;
@@ -104,9 +104,6 @@ nav, .link {
 	}
 }
 @media screen and (max-width: 1215px) {
-	.profpic, #team {
-		height: 150px;
-	}
 	#teamDiv {
 		margin-top: 100px;
 	}
