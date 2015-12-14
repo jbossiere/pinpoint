@@ -101,6 +101,11 @@ nav, .link {
 	height: 500px;
 }
 
+@media screen and (max-width: 1481px) {
+	#cal {
+		margin-top: 0;
+	}
+}
 /* Settings to optimize for larger screens */
 @media screen and (min-width: 1281px) {
 	#mainLogo {
