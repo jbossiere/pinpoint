@@ -16,25 +16,20 @@
 
 /*Style for the footer*/
 #footer {
-	height: 100px;
+	height: 40px;
 	margin-top: 10px;
 	background-color: #eceff1;
 }
-#footerul {
+
+#footertext {
 	margin-bottom: 0;
 }
-#footerul a {
-	color: #007aff;
-}
-#footerul li {
-	display: inline;
-	padding-right: 20px;
-}
-#footerul p {
-	margin-bottom: 0;
-}
-#footerul, .subtitle, .caption {
+#footertext, .subtitle, .caption {
 	text-align: center;
+}
+
+hr {
+	margin-bottom: 10px;
 }
 
 /*changes the default navbar link color*/
