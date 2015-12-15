@@ -3,25 +3,23 @@
 .boldText {
 	font-weight: bold;
 }
+
+/*Changes color of Materialize card panel*/
 .card-panel {
 	background-color: #007aff;
 }
 
+/* Styling for all descriptions */
 .description {
 	font-size: 14pt;
 }
 
-.divider {
-	background-color: #fff;
-	border-top: 2px dotted #8c8b8b;
-}
-
+/*Style for the footer*/
 #footer {
 	height: 100px;
 	margin-top: 10px;
 	background-color: #eceff1;
 }
-
 #footerul {
 	margin-bottom: 0;
 }
@@ -51,13 +49,24 @@
 	vertical-align: initial;
 }
 
-/* Positions mainlogo img */
+/* Default size of main logo */
 #mainLogo {
-	position: absolute;
-	left: 35%;
-	top: 43%;
-	transform: translate(-50%, -50%);
 	height: 12em;
+}
+
+/* Positions mainlogo and screenshot imgs in div */
+#mainLogo, .screenImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Centers the div containing mainLogo*/
+#mainlogo-div {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 nav, .link {
@@ -78,10 +87,8 @@ nav, .link {
 
 .screenImg {
 	max-width: 250px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
 }
+
 /*positions header subtitles*/
 .subtitle {
 	margin-top: 75vh;
@@ -99,18 +106,12 @@ nav, .link {
 	border-color: #007aff;
 }
 
-/* Settings to optimize for larger screens */
-@media screen and (min-width: 1281px) {
-	#mainLogo {
-		left: 38%;
-	}
-}
 /* Settings to optimize for mobile */
 @media screen and (max-width: 768px) {
 	/*adjust image size for mobile*/
 	#mainLogo {
 		height: 10em;
-		left: 10%;
+
 	}
 }
 @media only screen and (min-width: 601px) {
@@ -119,5 +120,3 @@ nav, .link {
 		line-height: 50px;
 	}
 }
-
-/*pin color: #007aff
